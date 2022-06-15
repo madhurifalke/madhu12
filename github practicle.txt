@@ -1,0 +1,73 @@
+ user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/user/Desktop/ASD/.git/
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.text
+
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ touch demo.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.text
+
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git add demo.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.text
+
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ touch demo1.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ touch demo.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ touch demo3.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git add --a
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git commit
+[master (root-commit) a050960] my third commit file
+ 3 files changed, 3 insertions(+)
+ create mode 100644 demo.text
+ create mode 100644 demo1.text
+ create mode 100644 demo3.text
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$ git log
+commit a050960b680a4d9fba85353dbf9a5440f70fc15c (HEAD -> master)
+Author: madhurifalke <madhuri.falke1@gmail.com>
+Date:   Wed Jun 8 15:04:23 2022 -0700
+
+    my third commit file
+
+user@DESKTOP-7KV4HPC MINGW64 ~/Desktop/ASD (master)
+$
